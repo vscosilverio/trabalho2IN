@@ -9,10 +9,10 @@ body{
 
 nav{
     width: 100%;
-    background-color: #013c3500;
+    background-color: #0000007d;
     position: fixed;
-    border-bottom: 2px ridge white ;
-    backdrop-filter: blur(10px);
+    border-bottom: 1px ridge white;
+    backdrop-filter: blur(20px);
 }
 
 #elementosNav{
@@ -39,25 +39,25 @@ nav{
 
 #firstSession{
     background-color: #013c35;
-    width: 100vw;
+    width: 100%;
     height: 80vh;
 }
 
 #secondSession{
     background-color: #e50c36;
-    width: 100vw;
+    width: 100%;
     height: 80vh;
 }
 
 #thirdSession{
     background-color: white;
-    width: 100vw;
+    width: 100%;;
     height: 80vh;
 }
 
 #footer{
     border: none;
     background-color: #181818;
-    width: 100vw;
+    width: 100%;
     height: 50vh;
 }
