@@ -1,0 +1,493 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+body{
+    margin: 0px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+nav{
+    width: 100%;
+    background-color: #00000065;
+    position: fixed;
+    border-bottom: 1px ridge white;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+
+#elementosNav{
+    width: 50%;
+    list-style: none;
+    color: white;
+    font-size: 1em;
+}
+
+#elementosNav li{
+    display: flex;
+    margin-left: 1em;
+    align-items: center;
+}
+
+#links{
+    width: 50%;
+    list-style: none;
+    color: white;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 2em;
+}
+
+#links li{
+    display: flex;
+    margin-right: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+#links a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center !important;
+    text-decoration: none;
+    color: white;
+    align-items: end;
+    border-style: ridge;
+    border-color: white;
+    border-width: 1px;
+    padding: 8px;
+}
+
+#imgLogo{
+    height: 2em;
+}
+
+/* #content{
+
+} */
+
+#firstSession{
+    background-color: #013c35;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#secondSession{
+    display: flex;
+    flex-direction: row;
+    background-color: #e50c36;
+    width: 100%;
+    /* height: 120vh; */
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#secondSession p{
+    color: white;
+    line-height: 2em;
+    padding-bottom: 1em;
+}
+
+#secondSession a{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center !important;
+    text-decoration: none;
+    color: white;
+    align-items: end;
+    border-style: ridge;
+    border-color: white;
+    border-width: 1px;
+    padding: 8px;
+    width: 25%;
+    transition: all 0.5s ease-in-out;
+}
+
+#secondSession a:hover{
+    justify-content: center;
+    background-color: white;
+    color: #e50c36;
+    width: 50%;
+}
+
+#thirdSession{
+    background-color: white;
+    width: 100%;;
+    height: 100vh;
+}
+
+#footer{
+    border: none;
+    background-color: #181818;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+
+}
+
+.width-50{
+    width: 50%;
+    height: 100%;
+    background-color: #00000000;
+}
+
+#imgPessoas{
+    width: 50%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 0;
+}
+
+#desportoUPorto{
+    color: #ffa700;
+    letter-spacing: 0.5em;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.width-50.leftTextSession{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 7em;
+}
+
+.width-50.leftTextSession a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.width-50.leftTextSession p{
+    line-height: 2em;
+}
+
+.highlight{
+    color: white;
+    font-size: 5em;
+    margin: 0px;
+}
+
+.blackHighlight{
+    color: black;
+    font-size: 2em;
+    margin: 0px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.WhiteHighlight{
+    color: white;
+    font-size: 2em;
+    margin: 0px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+
+#footer .textSession{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: start;
+    padding-top: 5em;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+}
+.icon{
+    background-color: #2e2e2e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    margin-right: 0.8em;
+}
+
+.icon img{
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+#logosDiversas{
+    display: flex;
+    flex-direction: row;
+}
+
+.textSession h5{
+    color: #A3A3A3;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+}
+
+.contactos{
+    color: white;
+}
+
+.contactos a{
+    color: white;
+}
+
+#firstFooterSession{
+    margin-top: 1.9em;
+}
+#thirdFooterSession{
+    margin-top: 6.4em;
+}
+
+#firstSessionInst{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /* filter: brightness(50%); */
+}
+
+#firstSessionInst::before{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(images/football-pitch.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    content: "";
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+#secondSessionInst{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+#desportoUPortoBlack{
+    color: #000000;
+    letter-spacing: 0.5em;
+    font-size: 0.8em;
+    font-weight: 600;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#desportoUPortoWhite{
+    color: #ffffff;
+    letter-spacing: 0.5em;
+    font-size: 0.8em;
+    font-weight: 600;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.desportoUPortoGreen{
+    color: #013c35;
+    letter-spacing: 0.2em;
+    font-size: 1em;
+    font-weight: 600;
+    padding-top: 1em;
+}
+
+#copyright{
+    width: 100%;
+    height: 10vh;
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+}
+
+#videoCDUP{
+    padding-top: 10em;
+    padding-left: 4em;
+}
+
+#firstCP{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+    padding-left: 3em;
+}
+
+#secondCP{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+    padding-right: 4em;
+}
+
+.copyright{
+    color: #2e2e2e;
+    font-weight: 500;
+    font-size: 0.8em;
+}
+
+
+.instalacoes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50vh;
+}
+
+#instalacao1{
+    width: 33vw;
+    height: 100%;   
+    background-image: url(images/estadio-univ-porto.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#instalacao2{
+    width: 33vw;
+    height: 100%;
+    background-image: url(images/ginasio-Boa-Hora1-2_site.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#instalacao3{
+    width: 33vw;
+    height: 100%;
+    background-image: url(images/Pavilhao-Luis-Falcao-2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.instalacoes a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+    text-decoration: none;
+    color: white;
+    border-style: ridge;
+    border-color: white;
+    border-width: 1px;
+    padding: 8px;
+    width: 22%;
+    transition: all 0.5s ease-in-out;
+}
+
+.instalacoes a:hover{
+    margin-bottom: -1em;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    background: #00000067;
+    transition: all 0.5s ease-in-out;
+}
+
+.overlay:hover{
+    backdrop-filter: blur(0px);
+    /* background: #00000025; */
+}
+
+.textContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.textContent h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#firstSessionEst{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /* filter: brightness(50%); */
+}
+
+#firstSessionEst p{
+    color: white;
+    font-weight:lighter;
+}
+
+#firstSessionEst::before{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(images/estadio-univ-porto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    content: "";
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+#secondSessionEst{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.infoText{
+    font-size: 0.8em;
+    line-height: 1.5em !important;
+}
+
+.imgMulher{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.imgMulher img{
+    padding-top: 2em;
+    width: 90%;
+    /* position: absolute; */
+    /* bottom: 0px;
+    right: 0px; */
+    z-index: 0;
+}
